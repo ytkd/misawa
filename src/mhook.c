@@ -19,7 +19,6 @@ BOOL __stdcall DllEntryPoint(HINSTANCE hInst, DWORD dwReason, void *p) {
 	case DLL_PROCESS_ATTACH:
 		break;
 	case DLL_PROCESS_DETACH:
-		UninstallHook();
 		break;
 	}
 	return TRUE;
